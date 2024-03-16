@@ -10,3 +10,6 @@ readme = "README.md"
 keywords = ["llm", "chatml", "chat-templates"]
 
 [dependencies]
+minijinja = "1.0.12"
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0.58"
