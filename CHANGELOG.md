@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0](https://github.com/chenhunghan/chat-templates/compare/v0.1.0...v0.2.0) (2024-03-16)
+
+
+### Features
+
+* add support for mistral instrut ([947834d](https://github.com/chenhunghan/chat-templates/commit/947834db0cdabb475d562de80a512c293fa4866d))
+* infra to support mutiple chat templates ([12d972b](https://github.com/chenhunghan/chat-templates/commit/12d972b2a3474008545c190b09080506d63091eb))
+
 ## 0.1.0 (2024-03-16)
 
 
