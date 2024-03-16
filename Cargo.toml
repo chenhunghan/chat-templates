@@ -1,0 +1,12 @@
+[package]
+name = "chat-templates"
+version = "0.1.0"
+edition = "2021"
+authors = ["Hung-Han Chen <chenhungh@gmail.com>"]
+description = "Simple chat templates parser/generator for prompting LLM"
+license-file = "LICENSE"
+repository = "https://github.com/chenhunghan/chat-templates"
+readme = "README.md"
+keywords = ["llm", "chatml", "chat-templates"]
+
+[dependencies]
