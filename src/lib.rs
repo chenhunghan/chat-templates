@@ -10,7 +10,7 @@ pub struct Message {
 /// [chatml](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/ai-services/openai/includes/chat-markup-language.md) jinja templatel, modified
 /// from repo [`chat_templates`](https://github.com/chujiezheng/chat_templates/tree/main/chat_templates)
 /// with minijinja [compatible syntax](https://github.com/mitsuhiko/minijinja/blob/main/COMPATIBILITY.md)
-pub const CHATML_JINJA_TEMPLATE: &str = "{% for message in messages %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}";
+const CHATML_JINJA_TEMPLATE: &str = "{% for message in messages %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}";
 
 const CHATML_JINJA_TEMPLATE_NAME: &str = "chatml";
 
@@ -20,7 +20,7 @@ const CHATML_JINJA_TEMPLATE_NAME: &str = "chatml";
 /// * `messages` - a list of messages, each message contains `role` and `content`
 /// * `add_generation_prompt` - if `true`, attach `<|im_start|>assistant\n` at the end of the prompt
 ///
-pub fn apply_chatml_template(
+fn apply_chatml_template(
     messages: &Vec<Message>,
     add_generation_prompt: bool,
 ) -> Result<String, ApplyChatMLTemplateError> {
