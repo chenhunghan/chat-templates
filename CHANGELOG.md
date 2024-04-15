@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/chenhunghan/chat-templates/compare/v0.2.0...v0.3.0) (2024-04-15)
+
+
+### Features
+
+* add support for taide ([be61a33](https://github.com/chenhunghan/chat-templates/commit/be61a33ddf6766b495a4404cc69534b79aea6e4f))
+
 ## [0.2.0](https://github.com/chenhunghan/chat-templates/compare/v0.1.0...v0.2.0) (2024-03-16)
 
 
